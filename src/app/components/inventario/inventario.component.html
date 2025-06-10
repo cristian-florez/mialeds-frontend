@@ -1,1 +1,26 @@
-<p>inventario works!</p>
+<div class="container">
+  <h4>Lista de Productos</h4>
+  
+  <table class="striped">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nombre</th>
+        <th>Presentación</th>
+        <th>Precio Compra</th>
+        <th>Precio Venta</th>
+        <th>Cantidad</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let producto of productos">
+        <td>{{ producto.id }}</td>
+        <td>{{ producto.nombre }}</td>
+        <td>{{ producto.presentacion }}</td>
+        <td>{{ producto.precioCompra }}</td>
+        <td>{{ producto.precioVenta }}</td>
+        <td>{{ producto.cantidadExistente }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
