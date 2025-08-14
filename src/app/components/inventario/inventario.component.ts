@@ -1,10 +1,12 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductoService } from '../../services/producto.service';
 import { Producto } from '../../models/producto';
+import { CommonModule } from '@angular/common';
 
 
 @Component({
   selector: 'app-inventario',
+  imports: [CommonModule],
   templateUrl: './inventario.component.html',
   styleUrls: ['./inventario.component.css']
 })

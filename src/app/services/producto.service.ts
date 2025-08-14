@@ -2,8 +2,8 @@ import { HttpClient } from '@angular/common/http';
 import { inject, Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 import { Producto } from '../models/producto';
-import { ProductoDto } from '../models/dtos/producto/productoDto';
-import { MovimientoDto } from '../models/dtos/producto/movimientoDto';
+import { ProductoDto } from '../models/dtos/producto/ProductoDto';
+import { MovimientoDto } from '../models/dtos/producto/MovimientoDto';
 import { environment } from '../../environments/environment';
 
 @Injectable({
